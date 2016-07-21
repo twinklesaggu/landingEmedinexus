@@ -1,13 +1,39 @@
 <div style = "margin-bottom: 51px;">
-<div class="row" ng-controller = "MasterCtrl">
+<header class="pageHeader">
+   
+    <nav class="navbar navbar-default" style = "margin-bottom: 0px;">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+         </button>
+         <a class="navbar-brand" href="#"><img src="img/logo-emedinexus.jpg" alt="emedinexus-logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right" style = "padding-top: 14px;">
+            <li><a href="#"> Blog</a></li>
+            <li><a href="#"> About Us</a></li>
+            <li><a href="#">Why Emedinexus ?</a></li>
+         </ul>
+      </div>
+   </nav>
+</header>
+   <div class="row slidingImage" ng-controller = "MasterCtrl" style ="background-image: url(img/slider-bg.jpg);">
          <div class="col-md-7">
-            <!-- <h2>WebCast Video</h2>
-            <div class="embed-responsive embed-responsive-16by9">
-               <iframe class="embed-responsive-item" src="/home/twinkle/Videos/f6699522.mp4"></iframe>
-            </div> -->
+            <div class="slider-container">
+               <div class="item" >
+                  <img src="img/slide-1.jpg" style = "width: 726px;margin-top: 11px;">
+                  <div class="slider-text">
+                     <!-- <h5 class="accent-color">India's Premier Doctor Network</h5>
+                     <h2>Access the last 24 Hours in Medicine</h2>
+                     <p>Breaking news and clinical updates at your fingertips as they happen real time</p> -->
+                  </div>
+               </div>
+            </div>
          </div>
          <div class="col-md-5 forms" ng-show = "formfirst">
-            <h2>Form</h2>
+           <h3 class="heading-bordered">Register For Free</h3>
             <form role="form">
                <div class = "row">
                   <div class="form-group col-md-6">
@@ -28,23 +54,42 @@
                   <input type="email" class="form-control" ng-model="formData.email" placeholder="Enter email">
                </div>
                <div class="form-group">
-                  <label for="usr">Password:</label>
-                  <input type="password" class="form-control" ng-model="formData.password" placeholder="Enter password">
+                  <label for="usr">Educational Details</label>
+                  <input type="text" class="form-control" ng-model="formData.collegeDetails" placeholder="Enter password">
                </div>
-               <div class="form-group">
+               <!-- <div class="form-group">
                   <label for="usr">Confirm Password:</label>
                   <input type="password" class="form-control" ng-model="formData.Cpassword" placeholder="Confirm your password">
-               </div>
+               </div> -->
                <div class="btn-group">
 			       <!--  <label class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</label>
 			        <label class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</label> -->
-			        <label class="btn btn-primary" ng-click = "submitForm()">Submit</label>
+			         <label class="btn btn-primary" ng-click = "submitForm()">Submit</label>
 			    </div>
             </form>
          </div>
          <div class="col-md-5 forms" ng-show = "formsecond">
+         
             <h2>Next</h2>
             <form role="form">
+               <div class="form-group">
+                  <label for="usr">Password:</label>
+                  <input type="password" class="form-control" ng-model="registerData.password" placeholder="enter your password">
+               </div>
+               <div class="form-group">
+                  <label for="usr">Confirm Password:</label>
+                  <input type="password" class="form-control" ng-model="registerData.Cpassword" placeholder="Confirm your password">
+               </div>
+               <div class="form-group">
+                  <label>
+                     <input type="radio" ng-model="registerData.gender" value="male">
+                        male
+                  </label>
+                  <label>
+                     <input type="radio" ng-model="registerData.gender" value="female">
+                     female
+                  </label>
+               </div>
                <div class = "row">
                   <div class="form-group col-md-6">
                      <label for="usr">Educational Details</label>
@@ -79,16 +124,12 @@
             </form>
          </div>
       </div>
-      <div class="text-center" style="background-image: url(img/fixedBg.jpg);background-repeat: no-repeat;background-position: 0px 0;background-attachment: fixed;padding: 169px 0;background-size: 101% 100%;">
-         <div class="toTable">
-            <div class="toTable-cell">
-               <h2 class="page-heading text-center">Download Mobile App</h2>
-               <div class="app-links">
-                  <a href=""><img src="img/gPlay.png" alt="emedinexus-logo"></a>
-                  <a href=""><img src="img/appStore.png" alt="emedinexus-logo"></a>
-               </div>
-            </div>
-         </div>   
+      <div class="text-center coverBackground" style="background-image: url(img/fixedBg.jpg);">
+         <h2 class="page-heading" style = "color:white;">Download Mobile App</h2>
+         <div class="app-links">
+            <a href=""><img src="img/gPlay.png" alt="emedinexus-logo"></a>
+            <a href=""><img src="img/appStore.png" alt="emedinexus-logo"></a>
+         </div>
       </div>
 
       <div class="section-feedback" style = "background: url(img/square-bg.jpg) repeat;">
@@ -99,7 +140,7 @@
                <div class="cardView">
                   <div class="cardImg"><!-- <img src="images/projectTwo.jpg"> --></div>
                   <div class="toTable">
-                     <div class="cardDetails toTable-cell">
+                     <div class="padding" style = "margin-top: 22px;">
                         <h5 class="block-heading">Jane Doe</h5>
                         <span class="">CEO, Some Companey, LZ</span>
                      </div>
@@ -113,7 +154,7 @@
                <div class="cardView">
                   <div class="cardImg"><!-- <img src="images/projectTwo.jpg"> --></div>
                   <div class="toTable">
-                     <div class="cardDetails toTable-cell">
+                     <div class="padding" style = "margin-top: 22px;">
                         <h5 class="block-heading">Jane Doe</h5>
                         <span class="">CEO, Some Companey, LZ</span>
                      </div>
@@ -127,7 +168,7 @@
                <div class="cardView">
                   <div class="cardImg"><!-- <img src="images/projectTwo.jpg"> --></div>
                   <div class="toTable">
-                     <div class="cardDetails toTable-cell">
+                     <div class="padding" style = "margin-top: 22px;">
                         <h5 class="block-heading">Jane Doe</h5>
                         <span class="">CEO, Some Companey, LZ</span>
                      </div>
@@ -141,13 +182,17 @@
       </div>
    </div>
 
-   <div class="section-media">
+   <div class="section-media" ng-controller = "MasterCtrl">
       <div class="container">
          <div class="row">
             <h2 class="page-heading text-center">eMediNexus in Media</h2>
-            <ul rn-carousel>
-               <div class="item"><img src="img/media-one.jpg"></div>
-               <div class="item"><img src="img/media-one.jpg"></div>
+            <carousel interval="myInterval">
+               <slide ng-repeat="slide in slides">
+                  <img ng-src="{{slide.image}}">
+               </slide>
+            </carousel>
+              <!--  <div class="item"><img src="img/media-one.jpg"></div>
+               <div class="item"><img src="img/media-one.jpg"></div> -->
                <!-- <div class="item text-center"><img src="img/media-one.jpg"></div>
                <div class="item text-center"><img src="img/media-one.jpg"></div> -->
          </div>

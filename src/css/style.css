@@ -3,7 +3,6 @@
 	height: 483px;
     margin-bottom: 19px;
     margin-top: 11px;
-    margin-left: -9px;
 }
 
 .section-feedback {
@@ -38,7 +37,7 @@
 }
 
 .toTable-cell {
-	display: table-cell;
+	/*display: table-cell;*/
 	vertical-align: middle;
 }
 
@@ -65,4 +64,30 @@
 .footer-socialLinks ul li a:hover {
 	opacity: 0.8;
 }
+
+.slidingImage {
+   	background-color: #1c1c1c;
+}
+
+.navbar-default {
+	background-color: #004375;
+	height: 81px;
+	/*border: none;
+	color: #FFF;
+	margin-bottom: 0; */
+}
+
+.coverBackground {
+	background-repeat: no-repeat;
+	background-position: 0px 0;
+	background-attachment: fixed;
+	padding: 169px 0;
+	background-size: 101% 100%;
+}
+
+.navbar-default .navbar-collapse{
+	border-color: transparent;
+	background-color: #004375;
+}
+
 

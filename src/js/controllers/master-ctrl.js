@@ -6,6 +6,7 @@ angular.module('RDash')
     .controller('MasterCtrl', ['$scope', MasterCtrl]);
 
 function MasterCtrl($scope) {
+    $scope.myInterval = 3000;
     $scope.formData = {};
     $scope.registerData = {};
     $scope.formfirst = true;
@@ -19,7 +20,7 @@ function MasterCtrl($scope) {
             lastname    : $scope.formData.lastname,
             number      : $scope.formData.number,
             email       : $scope.formData.email,
-            password    : $scope.formData.password,
+            college    : formData.collegeDetails,
             otp         : 555555  
         }
         $scope.formDataSave = $scope.formData;
@@ -29,6 +30,7 @@ function MasterCtrl($scope) {
 
     $scope.register = function(){
         $scope.registerData = {
+            gender       : $scope.registerData.gender,
             data        : $scope.formDataSave,
             college     : $scope.registerData.collegeDetails,
             speciality  : $scope.registerData.speciality,
@@ -40,4 +42,21 @@ function MasterCtrl($scope) {
         console.log("=====registeredData======",$scope.registeredData);
         console.log("=====$scope.registerData======",JSON.stringify($scope.registerData));
     }
+    $scope.slides =[ 
+        {
+            image: 'img/media-one.jpg'
+        },
+        {
+            image: 'img/media-one.jpg'
+        },
+        {
+            image: 'img/media-one.jpg'
+        },
+        {
+            image: 'img/media-one.jpg'
+        },
+        {
+            image: 'img/media-one.jpg'
+        },
+    ]
 }
