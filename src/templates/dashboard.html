@@ -1,7 +1,6 @@
-<div style = "margin-bottom: 51px;">
 <header class="pageHeader">
    
-    <nav class="navbar navbar-default" style = "margin-bottom: 0px;">
+   <nav class="navbar navbar-default" style = "margin-bottom: 0px;">
       <div class="navbar-header">
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
@@ -19,58 +18,90 @@
       </div>
    </nav>
 </header>
+<div style = "margin-bottom: 51px;">
+
    <div class="row slidingImage" ng-controller = "MasterCtrl" style ="background-image: url(img/slider-bg.jpg);">
-         <div class="col-md-7">
-            <div class="slider-container">
+      <div class="col-md-7">
+         <div class="slider-container">
+            <div id="owl-two">
                <div class="item" >
-                  <img src="img/slide-1.jpg" style = "width: 726px;margin-top: 11px;">
-                  <div class="slider-text">
-                     <!-- <h5 class="accent-color">India's Premier Doctor Network</h5>
+                  <div class="slider-text topleft">
+                     <h5 class="accent-color">India's Premier Doctor Network</h5>
                      <h2>Access the last 24 Hours in Medicine</h2>
-                     <p>Breaking news and clinical updates at your fingertips as they happen real time</p> -->
+                     <p>Breaking news and clinical updates at your fingertips as they happen real time</p>
                   </div>
+                  <img src="img/slide-1.png" style = "width: 709px;margin-top: -14px;">
+                  
+               </div>
+               <div class="item" >
+                  <div class="slider-text topleft">
+                     <h5 class="accent-color">India's Premier Doctor Network</h5>
+                     <h2>Access the last 24 Hours in Medicine</h2>
+                     <p>Breaking news and clinical updates at your fingertips as they happen real time</p>
+                  </div>
+                  <img src="img/slide-2.png" style = "width: 709px;margin-top: -14px;">
+                  
+               </div>
+               <div class="item" >
+               <div class="slider-text topleft">
+                     <h5 class="accent-color">India's Premier Doctor Network</h5>
+                     <h2>Access the last 24 Hours in Medicine</h2>
+                     <p>Breaking news and clinical updates at your fingertips as they happen real time</p>
+                  </div>
+                  <img src="img/slide-3.png" style = "width: 709px;margin-top: -14px;">
+                  
+               </div>
+               <div class="item" >
+               <div class="slider-text topleft" >
+                     <h5 class="accent-color">India's Premier Doctor Network</h5>
+                     <h2>Access the last 24 Hours in Medicine</h2>
+                     <p>Breaking news and clinical updates at your fingertips as they happen real time</p>
+                  </div>
+                  <img src="img/slide-4.png" style = "width: 709px;margin-top: -14px;">
+                  
                </div>
             </div>
          </div>
-         <div class="col-md-5 forms" ng-show = "formfirst">
-           <h3 class="heading-bordered">Register For Free</h3>
-            <form role="form">
-               <div class = "row">
-                  <div class="form-group col-md-6">
-                     <label for="usr">FIrst Name:</label>
-                     <input type="text"  class="form-control" ng-model="formData.firstname" placeholder="Enter firstname">
-                  </div>
-                  <div class="form-group col-md-6">
-                     <label for="usr">Last Name:</label>
-                     <input type="text" class="form-control" ng-model="formData.lastname" placeholder="Enter lastname">
-                  </div>
+      </div>
+      <div class="col-md-5 forms" ng-show = "formfirst">
+        <h3 class="heading-bordered">Register For Free</h3>
+         <form role="form">
+            <div class = "row">
+               <div class="form-group col-md-6">
+                  <label for="usr">FIrst Name:</label>
+                  <input type="text"  class="form-control" ng-model="formData.firstname" placeholder="Enter firstname" required>
                </div>
-               <div class="form-group">
-                  <label for="usr">Mobile Number:</label>
-                  <input type="number" class="form-control" ng-model="formData.number" placeholder="Enter Number">
+               <div class="form-group col-md-6">
+                  <label for="usr">Last Name:</label>
+                  <input type="text" class="form-control" ng-model="formData.lastname" placeholder="Enter lastname">
                </div>
-               <div class="form-group">
-                  <label for="usr">Email:</label>
-                  <input type="email" class="form-control" ng-model="formData.email" placeholder="Enter email">
-               </div>
-               <div class="form-group">
-                  <label for="usr">Educational Details</label>
-                  <input type="text" class="form-control" ng-model="formData.collegeDetails" placeholder="Enter password">
-               </div>
-               <!-- <div class="form-group">
-                  <label for="usr">Confirm Password:</label>
-                  <input type="password" class="form-control" ng-model="formData.Cpassword" placeholder="Confirm your password">
-               </div> -->
-               <div class="btn-group">
-			       <!--  <label class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</label>
-			        <label class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</label> -->
-			         <label class="btn btn-primary" ng-click = "submitForm()">Submit</label>
-			    </div>
-            </form>
-         </div>
-         <div class="col-md-5 forms" ng-show = "formsecond">
+            </div>
+            <div class="form-group">
+               <label for="usr">Mobile Number:</label>
+               <input type="number" class="form-control" ng-model="formData.number" placeholder="Enter Number">
+            </div>
+            <div class="form-group">
+               <label for="usr">Email:</label>
+               <input type="email" class="form-control" ng-model="formData.email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+               <label for="usr">Educational Details</label>
+               <input type="text" class="form-control" ng-model="formData.collegeDetails" placeholder="college">
+            </div>
+            <!-- <div class="form-group">
+               <label for="usr">Confirm Password:</label>
+               <input type="password" class="form-control" ng-model="formData.Cpassword" placeholder="Confirm your password">
+            </div> -->
+            <div class="btn-group">
+		       <!--  <label class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</label>
+		        <label class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</label> -->
+		         <label class="btn btn-primary" ng-click = "submitForm()">Submit</label>
+		    </div>
+         </form>
+      </div>
+         <div class="col-md-5 forms" ng-show = "formsecond" style ="height: 591px;" >
          
-            <h2>Next</h2>
+            <h2 ng-click = "backToform1()" >Back</h2>
             <form role="form">
                <div class="form-group">
                   <label for="usr">Password:</label>
@@ -93,24 +124,28 @@
                <div class = "row">
                   <div class="form-group col-md-6">
                      <label for="usr">Educational Details</label>
-                     <input type="text"  class="form-control" ng-model="registerData.collegeDetails" placeholder="college">
+                     <input type="text"  class="form-control" ng-model="registerData.speciality" placeholder="speciality">
                   </div>
                   <div class="form-group col-md-6">
                      <label for="usr"></label>
-                     <input type="text" class="form-control" ng-model="registerData.speciality" placeholder="speciality">
+                     <input type="text" class="form-control" ng-model="registerData.degree" placeholder="degree">
                   </div>
                </div>
-               <div class="form-group">
+              <!--  <div class="form-group">
                   <label for="usr">Professional Detials</label>
                   <input type="text" class="form-control" ng-model="registerData.title" placeholder="Current title/practise">
-               </div>
-               <div class="form-group">
-                  <label for="usr"></label>
+               </div> -->
+               <!-- <div class="form-group">
+                  <label for="usr"> Professional Details</label>
                   <input type="text" class="form-control" ng-model="registerData.clinic" placeholder="Hospital/clinic">
+               </div> -->
+               <div class="form-group">
+                  <label for="usr"> Professional Details </label>
+                  <input type="text" class="form-control" ng-model="registerData.statemedicalcouncil" placeholder="State medical council*">
                </div>
                <div class="form-group">
                   <label for="usr"></label>
-                  <input type="password" class="form-control" ng-model="registerData.state" placeholder="state">
+                  <input type="text" class="form-control" ng-model="registerData.mci_number" placeholder = "mci_number*">
                </div>
                <!-- <div class="form-group">
                   <label for="usr">Confirm Password:</label>
@@ -119,8 +154,8 @@
                <div class="btn-group">
 			       <!--  <label class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</label>
 			        <label class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</label> -->
-			        <label class="btn btn-primary" ng-click = "register()">Submit</label>
-			    </div>
+			         <label class="btn btn-primary" ng-click = "register()">Submit</label>
+			      </div>
             </form>
          </div>
       </div>
@@ -138,7 +173,7 @@
             <h2 class="page-heading text-center">Testimonials</h2>
             <div class="col-sm-4">
                <div class="cardView">
-                  <div class="cardImg"><!-- <img src="images/projectTwo.jpg"> --></div>
+                  <div class="cardImg"><img src="img/bot-gyn-alkakriplani.jpg" style = "width: 100px;"></div>
                   <div class="toTable">
                      <div class="padding" style = "margin-top: 22px;">
                         <h5 class="block-heading">Jane Doe</h5>
@@ -152,7 +187,7 @@
             </div>
             <div class="col-sm-4">
                <div class="cardView">
-                  <div class="cardImg"><!-- <img src="images/projectTwo.jpg"> --></div>
+                  <div class="cardImg"><img src="img/drkkaggarwal.jpeg" style = "width: 100px;"></div>
                   <div class="toTable">
                      <div class="padding" style = "margin-top: 22px;">
                         <h5 class="block-heading">Jane Doe</h5>
@@ -166,7 +201,7 @@
             </div>
             <div class="col-sm-4">
                <div class="cardView">
-                  <div class="cardImg"><!-- <img src="images/projectTwo.jpg"> --></div>
+                  <div class="cardImg"><img src="img/dmmahajan.jpg" style = "width: 100px;"></div>
                   <div class="toTable">
                      <div class="padding" style = "margin-top: 22px;">
                         <h5 class="block-heading">Jane Doe</h5>
@@ -182,19 +217,21 @@
       </div>
    </div>
 
-   <div class="section-media" ng-controller = "MasterCtrl">
+   <div ng-controller = "MasterCtrl">
       <div class="container">
          <div class="row">
             <h2 class="page-heading text-center">eMediNexus in Media</h2>
-            <carousel interval="myInterval">
-               <slide ng-repeat="slide in slides">
-                  <img ng-src="{{slide.image}}">
-               </slide>
-            </carousel>
-              <!--  <div class="item"><img src="img/media-one.jpg"></div>
-               <div class="item"><img src="img/media-one.jpg"></div> -->
-               <!-- <div class="item text-center"><img src="img/media-one.jpg"></div>
-               <div class="item text-center"><img src="img/media-one.jpg"></div> -->
+            <div id="owl-demo">
+               <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <div class="item text-center"><img src="img/media-one.jpg"></div>
+            </div>
          </div>
       </div>
    </div>

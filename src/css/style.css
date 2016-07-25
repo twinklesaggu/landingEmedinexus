@@ -76,6 +76,13 @@
 	color: #FFF;
 	margin-bottom: 0; */
 }
+.navbar-default ul.navbar-nav li a {
+	color: #FFFFFF;
+}
+
+.navbar-toggle{
+	margin-top: 28px;
+}
 
 .coverBackground {
 	background-repeat: no-repeat;
@@ -89,5 +96,21 @@
 	border-color: transparent;
 	background-color: #004375;
 }
+.section-media {
+	padding-bottom: 40px;
+}
 
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+
+  .topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    color:white;
+}
 
