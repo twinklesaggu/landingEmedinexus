@@ -82,6 +82,18 @@ function MasterCtrl($scope) {
           // itemsMobile : false
      
         });
+        $("#testimonials").owlCarousel({
+          //navigation : false, // Show next and prev buttons
+          autoPlay: true,   
+          slideSpeed : 300,
+          paginationSpeed : 400,
+     
+          items : 3, 
+          //itemsDesktop : false,
+          //itemsDesktopSmall : [979,3],
+          //itemsTablet: [768,2],
+          //itemsMobile : [479,1]
+        })
 
         // $(window).scroll(function() {
         //    var winScroll = $(window).scrollTop();

@@ -2,7 +2,7 @@
 	background-color:#d9d9d9;
 	height: 483px;
     margin-bottom: 19px;
-    margin-top: 11px;
+    /*margin-top: 11px;*/
 }
 
 .section-feedback {
@@ -69,17 +69,6 @@
    	background-color: #1c1c1c;
 }
 
-.navbar-default {
-	background-color: #004375;
-	height: 81px;
-	/*border: none;
-	color: #FFF;
-	margin-bottom: 0; */
-}
-.navbar-default ul.navbar-nav li a {
-	color: #FFFFFF;
-}
-
 .navbar-toggle{
 	margin-top: 28px;
 }
@@ -92,10 +81,6 @@
 	background-size: 101% 100%;
 }
 
-.navbar-default .navbar-collapse{
-	border-color: transparent;
-	background-color: #004375;
-}
 .section-media {
 	padding-bottom: 40px;
 }
@@ -106,11 +91,22 @@
       margin: auto;
   }
 
-  .topleft {
+.topleft {
     position: absolute;
     top: 8px;
     left: 16px;
     font-size: 18px;
     color:white;
 }
+.padding-testimonial{
+	margin-left: 13px;
+}
+
+.text-paragraph{
+	color:white;
+}
+.accent-color{
+	color: skyblue;
+}
+
 

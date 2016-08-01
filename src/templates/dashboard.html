@@ -1,37 +1,23 @@
-<header class="pageHeader">
-   
-   <nav class="navbar navbar-default" style = "margin-bottom: 0px;">
-      <div class="navbar-header">
-         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span> 
-         </button>
-         <a class="navbar-brand" href="#"><img src="img/logo-emedinexus.jpg" alt="emedinexus-logo"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-         <ul class="nav navbar-nav navbar-right" style = "padding-top: 14px;">
-            <li><a href="#"> Blog</a></li>
-            <li><a href="#"> About Us</a></li>
-            <li><a href="#">Why Emedinexus ?</a></li>
-         </ul>
-      </div>
-   </nav>
-</header>
 <div style = "margin-bottom: 51px;">
-
    <div class="row slidingImage" ng-controller = "MasterCtrl" style ="background-image: url(img/slider-bg.jpg);">
-      <div class="col-md-7">
+      <div class="col-md-8">
          <div class="slider-container">
             <div id="owl-two">
                <div class="item" >
                   <div class="slider-text topleft">
                      <h5 class="accent-color">India's Premier Doctor Network</h5>
-                     <h2>Access the last 24 Hours in Medicine</h2>
-                     <p>Breaking news and clinical updates at your fingertips as they happen real time</p>
+                     <h2>Q&A and Second Opinions</h2>
+                     <p>Discuss live cases and ask targated questions to leading doctors across India </p>
                   </div>
                   <img src="img/slide-1.png" style = "width: 709px;margin-top: -14px;">
-                  
+               </div>
+               <div class="item" >
+                  <div class="slider-text topleft">
+                     <h5 class="accent-color">India's Premier Doctor Network</h5>
+                     <h2>Speciality,Newsletters and Discussions</h2>
+                     <p>Receive speciality specific newsletters and engage in relevant discussions</p>
+                  </div>
+                  <img src="img/slide-2.png" style = "width: 709px;margin-top: -14px;">
                </div>
                <div class="item" >
                   <div class="slider-text topleft">
@@ -39,32 +25,29 @@
                      <h2>Access the last 24 Hours in Medicine</h2>
                      <p>Breaking news and clinical updates at your fingertips as they happen real time</p>
                   </div>
-                  <img src="img/slide-2.png" style = "width: 709px;margin-top: -14px;">
-                  
-               </div>
-               <div class="item" >
-               <div class="slider-text topleft">
-                     <h5 class="accent-color">India's Premier Doctor Network</h5>
-                     <h2>Access the last 24 Hours in Medicine</h2>
-                     <p>Breaking news and clinical updates at your fingertips as they happen real time</p>
-                  </div>
                   <img src="img/slide-3.png" style = "width: 709px;margin-top: -14px;">
-                  
                </div>
                <div class="item" >
-               <div class="slider-text topleft" >
+                  <div class="slider-text topleft" >
                      <h5 class="accent-color">India's Premier Doctor Network</h5>
-                     <h2>Access the last 24 Hours in Medicine</h2>
-                     <p>Breaking news and clinical updates at your fingertips as they happen real time</p>
+                     <h2>Medical Conference Feed</h2>
+                     <p>Live coverage by a dedicated team of medical content writers of every session</p>
                   </div>
                   <img src="img/slide-4.png" style = "width: 709px;margin-top: -14px;">
-                  
+               </div>
+               <div class="item" >
+                  <div class="slider-text topleft" >
+                     <h5 class="accent-color">India's Premier Doctor Network</h5>
+                     <h2>Exclusive Webcasts</h2>
+                     <p>Engage directly with Key Opinion Key Leaders (KOLs) in webcast discussions every week covering important topics in healthcare</p>
+                  </div>
+                  <img src="img/slide-5.png" style = "width: 709px;margin-top: -14px;">
                </div>
             </div>
          </div>
       </div>
-      <div class="col-md-5 forms" ng-show = "formfirst">
-        <h3 class="heading-bordered">Register For Free</h3>
+      <div class="col-md-4 forms" ng-show = "formfirst">
+         <h3 class="heading-bordered">Register For Free</h3>
          <form role="form">
             <div class = "row">
                <div class="form-group col-md-6">
@@ -86,51 +69,51 @@
             </div>
             <div class="form-group">
                <label for="usr">Educational Details</label>
-               <input type="text" class="form-control" ng-model="formData.collegeDetails" placeholder="college">
+               <input type="text" class="form-control" ng-model="formData.collegeDetails" placeholder="College">
             </div>
             <!-- <div class="form-group">
                <label for="usr">Confirm Password:</label>
                <input type="password" class="form-control" ng-model="formData.Cpassword" placeholder="Confirm your password">
             </div> -->
             <div class="btn-group">
-		       <!--  <label class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</label>
-		        <label class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</label> -->
+		      <!-- <label class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</label>
+		         <label class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</label>-->
 		         <label class="btn btn-primary" ng-click = "submitForm()">Submit</label>
-		    </div>
+		      </div>
          </form>
       </div>
-         <div class="col-md-5 forms" ng-show = "formsecond" style ="height: 591px;" >
+      <div class="col-md-4 forms" ng-show = "formsecond" style ="height: 591px;" >
          
-            <h2 ng-click = "backToform1()" >Back</h2>
-            <form role="form">
-               <div class="form-group">
-                  <label for="usr">Password:</label>
-                  <input type="password" class="form-control" ng-model="registerData.password" placeholder="enter your password">
+         <h2 ng-click = "backToform1()" >Back</h2>
+         <form role="form">
+            <div class="form-group">
+               <label for="usr">Password:</label>
+               <input type="password" class="form-control" ng-model="registerData.password" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+               <label for="usr">Confirm Password:</label>
+               <input type="password" class="form-control" ng-model="registerData.Cpassword" placeholder="Confirm your password">
+            </div>
+            <div class="form-group">
+               <label>
+                  <input type="radio" ng-model="registerData.gender" value="Male">
+                     Male
+               </label>
+               <label>
+                  <input type="radio" ng-model="registerData.gender" value="Female">
+                  Female
+               </label>
+            </div>
+            <div class = "row">
+               <div class="form-group col-md-6">
+                  <label for="usr">Educational Details</label>
+                  <input type="text"  class="form-control" ng-model="registerData.speciality" placeholder="Speciality">
                </div>
-               <div class="form-group">
-                  <label for="usr">Confirm Password:</label>
-                  <input type="password" class="form-control" ng-model="registerData.Cpassword" placeholder="Confirm your password">
+               <div class="form-group col-md-6">
+                  <label for="usr"></label>
+                  <input type="text" class="form-control" ng-model="registerData.degree" placeholder="Degree">
                </div>
-               <div class="form-group">
-                  <label>
-                     <input type="radio" ng-model="registerData.gender" value="male">
-                        male
-                  </label>
-                  <label>
-                     <input type="radio" ng-model="registerData.gender" value="female">
-                     female
-                  </label>
-               </div>
-               <div class = "row">
-                  <div class="form-group col-md-6">
-                     <label for="usr">Educational Details</label>
-                     <input type="text"  class="form-control" ng-model="registerData.speciality" placeholder="speciality">
-                  </div>
-                  <div class="form-group col-md-6">
-                     <label for="usr"></label>
-                     <input type="text" class="form-control" ng-model="registerData.degree" placeholder="degree">
-                  </div>
-               </div>
+            </div>
               <!--  <div class="form-group">
                   <label for="usr">Professional Detials</label>
                   <input type="text" class="form-control" ng-model="registerData.title" placeholder="Current title/practise">
@@ -139,130 +122,132 @@
                   <label for="usr"> Professional Details</label>
                   <input type="text" class="form-control" ng-model="registerData.clinic" placeholder="Hospital/clinic">
                </div> -->
-               <div class="form-group">
-                  <label for="usr"> Professional Details </label>
-                  <input type="text" class="form-control" ng-model="registerData.statemedicalcouncil" placeholder="State medical council*">
-               </div>
-               <div class="form-group">
-                  <label for="usr"></label>
-                  <input type="text" class="form-control" ng-model="registerData.mci_number" placeholder = "mci_number*">
-               </div>
+            <div class="form-group">
+               <label for="usr"> Professional Details </label>
+               <input type="text" class="form-control" ng-model="registerData.statemedicalcouncil" placeholder="State medical council*">
+            </div>
+            <div class="form-group">
+               <label for="usr"></label>
+               <input type="text" class="form-control" ng-model="registerData.mci_number" placeholder = "Mci_number*">
+            </div>
                <!-- <div class="form-group">
                   <label for="usr">Confirm Password:</label>
                   <input type="password" class="form-control" ng-model="formData.Cpassword" placeholder="Confirm your password">
                </div> -->
-               <div class="btn-group">
-			       <!--  <label class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</label>
-			        <label class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</label> -->
-			         <label class="btn btn-primary" ng-click = "register()">Submit</label>
-			      </div>
-            </form>
-         </div>
+            <div class="btn-group">
+		       <!--  <label class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</label>
+		        <label class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</label> -->
+		         <label class="btn btn-primary" ng-click = "register()">Submit</label>
+		      </div>
+         </form>
       </div>
-      <div class="text-center coverBackground" style="background-image: url(img/fixedBg.jpg);">
-         <h2 class="page-heading" style = "color:white;">Download Mobile App</h2>
-         <div class="app-links">
-            <a href=""><img src="img/gPlay.png" alt="emedinexus-logo"></a>
-            <a href=""><img src="img/appStore.png" alt="emedinexus-logo"></a>
-         </div>
-      </div>
+   </div>
 
-      <div class="section-feedback" style = "background: url(img/square-bg.jpg) repeat;">
+   <!-- backgraound images -->
+   <div class="text-center coverBackground" style="background-image: url(img/fixedBg.jpg);">
+      <h2 class="page-heading text-paragraph">Download Mobile App</h2>
+      <div class="app-links">
+         <a href=""><img src="img/gPlay.png" alt="emedinexus-logo"></a>
+         <a href=""><img src="img/appStore.png" alt="emedinexus-logo"></a>
+      </div>
+   </div>
+
+   <!-- testimonial sliding -->
+   <div class="section-feedback" style = "background: url(img/square-bg.jpg);">
       <div class="container">
-         <div class="row">
-            <h2 class="page-heading text-center">Testimonials</h2>
-            <div class="col-sm-4">
+         <h2 class="page-heading text-center">Testimonials</h2>
+         <div class="row" id = "testimonials">
+            <div class="padding-testimonial">
                <div class="cardView">
                   <div class="cardImg"><img src="img/bot-gyn-alkakriplani.jpg" style = "width: 100px;"></div>
                   <div class="toTable">
                      <div class="padding" style = "margin-top: 22px;">
-                        <h5 class="block-heading">Jane Doe</h5>
+                        <h5 class="block-heading">Dr Alka Kriplani</h5>
                         <span class="">CEO, Some Companey, LZ</span>
                      </div>
                   </div>
                </div>
                <div class="descp-testmonal">
-                  <p>volutpat ea feugait litterarum. decima typi fiant. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                  <p>Fantastic learning and discussion forum for medical professionals. Highly recommended to all.</p>
                </div>
             </div>
-            <div class="col-sm-4">
+            <div class="padding-testimonial">
                <div class="cardView">
                   <div class="cardImg"><img src="img/drkkaggarwal.jpeg" style = "width: 100px;"></div>
                   <div class="toTable">
                      <div class="padding" style = "margin-top: 22px;">
-                        <h5 class="block-heading">Jane Doe</h5>
+                        <h5 class="block-heading">Dr K.K Aggarwal</h5>
                         <span class="">CEO, Some Companey, LZ</span>
                      </div>
                   </div>
                </div>
                <div class="descp-testmonal">
-                  <p>volutpat ea feugait litterarum. decima typi fiant. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                  <p>This is an integrated source for CME unlike anything in India. </p>
                </div>
             </div>
-            <div class="col-sm-4">
+            <div class="padding-testimonial">
                <div class="cardView">
                   <div class="cardImg"><img src="img/dmmahajan.jpg" style = "width: 100px;"></div>
                   <div class="toTable">
                      <div class="padding" style = "margin-top: 22px;">
-                        <h5 class="block-heading">Jane Doe</h5>
+                        <h5 class="block-heading"> Dr D.M Mahajan.</h5>
                         <span class="">CEO, Some Companey, LZ</span>
                      </div>
                   </div>
                </div>
                <div class="descp-testmonal">
-                  <p>volutpat ea feugait litterarum. decima typi fiant. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                  <p>Great features meeting our daily needs. Conference coverage and specialty group discussions/newsletters are my favourites.</p>
+               </div>
+            </div>
+            <div class="padding-testimonial">
+               <div class="cardView">
+                  <div class="cardImg"><img src="img/swatibhave.jpg" style = "width: 100px;"></div>
+                  <div class="toTable">
+                     <div class="padding" style = "margin-top: 22px;">
+                        <h5 class="block-heading"> Dr Swati Y. Bhave</h5>
+                        <span class="">CEO, Some Companey, LZ</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="descp-testmonal">
+                  <p>eMediNexus provides all the content that a doctor requires on a daily basis to keep performing at international standards.</p>
+               </div>
+            </div>
+            <div class="padding-testimonial">
+               <div class="cardView">
+                  <div class="cardImg"><img src="img/HKChopra.jpg" style = "width: 100px;"></div>
+                  <div class="toTable">
+                     <div class="padding" style = "margin-top: 22px;">
+                        <h5 class="block-heading">Dr H.K Chopra</h5>
+                        <span class="">CEO, Some Companey, LZ</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="descp-testmonal">
+                  <p>Really appreciate the advocacy focus of eMediNexus in representing doctor views to regulators. </p>
                </div>
             </div>
          </div>
       </div>
    </div>
 
+   <!-- media sliding -->
    <div ng-controller = "MasterCtrl">
       <div class="container">
          <div class="row">
             <h2 class="page-heading text-center">eMediNexus in Media</h2>
             <div id="owl-demo">
+               <div class="item text-center"><img src="img/ijcp.png"></div>
+               <div class="item text-center"><img src="img/heartcare.png"></div>
+               <div class="item text-center"><img src="img/media.png"  style = "width: 206px;height: 106px;"></div>
                <div class="item text-center"><img src="img/media-one.jpg"></div>
                <div class="item text-center"><img src="img/media-one.jpg"></div>
                <div class="item text-center"><img src="img/media-one.jpg"></div>
                <div class="item text-center"><img src="img/media-one.jpg"></div>
-               <div class="item text-center"><img src="img/media-one.jpg"></div>
-               <div class="item text-center"><img src="img/media-one.jpg"></div>
-               <div class="item text-center"><img src="img/media-one.jpg"></div>
-               <div class="item text-center"><img src="img/media-one.jpg"></div>
-               <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <!-- <div class="item text-center"><img src="img/media-one.jpg"></div>
+               <div class="item text-center"><img src="img/media-one.jpg"></div> -->
             </div>
          </div>
       </div>
    </div>
-
-   
 </div>
-<footer style ="background-color: #eaeae1;">
-   <div class="container">
-      <div class="row" style = "margin-top: 34px;">
-         <div class="col-sm-9">
-         <div class="footer-socialLinks">
-               <p>For Suggestions drop us a line at <img src="img/mail-oultlined.png" alt="emedinexus-logo">  <a href="">support@emedinexus.com</a></p>
-               <h5>Follow Us On</h5>
-               <ul class="clearfix">
-                  <li><a href="" class="fb" style="background-image: url(img/iconFacebook.png); width: 16px;"></a></li>
-                  <li><a href="" class="tw" style="background-image: url(img/iconLinkedin.png);"></a></li>
-                  <li><a href="" class="in" style="background-image: url(img/iconTwitter.png);"></a></li>
-               </ul>
-            </div>
-         </div>
-         <div class="col-sm-3">
-            <div class="app-links text-right">
-               <a href=""><img src="img/gPlay.png" alt="emedinexus-logo"></a>
-               <a href=""><img src="img/appStore.png" alt="emedinexus-logo"></a>
-            </div>
-         </div>
-      </div>
-      <div class="row">
-         <div class="col-sm-12 text-center cpyryt-txt">
-            <span>Copyright 2016 A.N eMediNexus Technologies All Rights Reserved</span>
-         </div>
-      </div>
-   </div>
-</footer>
